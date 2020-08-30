@@ -97,8 +97,9 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: #222;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -106,37 +107,79 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
-  background-color: #D8BFD8;
+  color: #fff;
+  }
+
+header,
+footer {
+
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+header{
+  font-size: 3em;
+  font-family: 'lora', sans-serif;
+}
+p span{
+  font-family: 'lora', sans-serif;
+}
+main {
+
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5em;
+  border-bottom: 1px solid #fff;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #708090;
+  color: white;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #D8BFD8;
-  height: 300px;
+  font-size: 1em;
+  padding: 1em;
+
   display: flex;
   justify-content: center;
-  width: 35%;
+  width: 30%;
   align-items:center;
-  padding: 20px;
+
+
 
 }
 .div-1{
-  border-right: 1px solid black;
+  border-right: 1px solid #fff;
+  height: 120px;
 }
 .div-2{
-  border-right: 1px solid black;
-}
+  border-right: 1px solid #fff;
+  height: 120px;
 
+}
+footer{
+  border-top: 1px solid #fff;
+}
+.pe-social{
+  color: #fff;
+  display: inline;
+}
 
 /* ==========================================================================
    Helper classes
